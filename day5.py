@@ -90,9 +90,15 @@ for i in range(0, nr_numbers):
 
 password = lettersList + symbolsList + numbersList
 
-for i in range(0, len(password)):
-    print(password[i], end="")
+# for i in range(0, len(password)):
+#     print(password[i], end="")
 
-print(" ")
+# print(" ")
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
+
+randomPassword = list(password)
+random.shuffle(randomPassword)
+result = ''.join(randomPassword)
+
+print(result)
